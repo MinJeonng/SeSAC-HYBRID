@@ -1,4 +1,5 @@
-import { SafeAreaView, StatusBar } from 'react-native';
+import { StatusBar } from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
 import WebView from 'react-native-webview';
 
 export default function WebViewWithNextPage() {
@@ -16,10 +17,10 @@ export default function WebViewWithNextPage() {
 
           //2. 안드로이드 애뮬레이터
           // 안드로이드 기계에서 localhost는 => 10.0.2.2
-          uri: 'http://10.0.2.2:3000/section01/01-04-webview-with-next',
+          // uri: 'http://10.0.2.2:3000/section01/01-04-webview-with-next',
 
           //3. IOS 시뮬레이터 -> 127.0.0.1 (ios에서 localhost)
-          // uri : "http://127.0.0.1:3000/section01/01-04-webview-with-next"
+          uri: 'http://127.0.0.1:3000/section01/01-04-webview-with-next',
         }}
       />
     </SafeAreaView>
