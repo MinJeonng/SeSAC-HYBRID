@@ -2,26 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+html {
+  /* 피그마 기본가로(360이라고 가정) : HTML기본폰트(16) = 나의기계사이즈(100vw) : 조정폰트(x) */
+  /* 위의 값을 연산하면 내가 조정해야할 폰트가 얼만지 알 수 있음 , 단위때문에 * vw */
+  font-size: calc((40 / 9) * 1vw);
 }
