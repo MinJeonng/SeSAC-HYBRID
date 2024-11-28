@@ -1,7 +1,9 @@
 import type { Metadata } from 'next';
 import localFont from 'next/font/local';
 import './globals.css';
-import LayoutComponent from '@/commons/layout/02-02';
+// import LayoutComponent from '@/commons/layout/02-02';
+import LayoutGlobalLocal from '@/commons/layout/02-03';
+import LayoutTransparent from '@/commons/layout/02-04';
 
 const geistSans = localFont({
   src: './fonts/GeistVF.woff',
@@ -25,12 +27,18 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="ko">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {/* 1) 02-02-layout-header-global 에서 사용한 레이아웃 */}
-        <LayoutComponent>{children}</LayoutComponent>
+        {/* <LayoutComponent>{children} </LayoutComponent> */}
+
+        {/* 2) 02-03-layout-header-local 수업 이후에 적용 */}
+        {/* <LayoutGlobalLocal>{children}</LayoutGlobalLocal> */}
+
+        {/* 3) 02-04-layout-header-transparent */}
+        <LayoutTransparent>{children}</LayoutTransparent>
       </body>
     </html>
   );

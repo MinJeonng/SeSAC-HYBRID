@@ -7,6 +7,8 @@ import WebViewInternetFailPage from '@/components/section01/01-05-webview-intern
 // [section02]
 import RatioScalingPage from '@/components/section02/02-01-ratio-scaling';
 import LayoutHeaderGlobal from '@/components/section02/02-02-layout-header-global';
+import LayoutHeaderLocal from '@/components/section02/02-03-layout-header-local';
+import LayoutHeaderTransparent from '@/components/section02/02-04-layout-header-transparent';
 
 export default function startPage() {
   return (
@@ -17,6 +19,9 @@ export default function startPage() {
     // <WebViewWithNextPage />
     // <WebViewInternetFailPage />
     // <RatioScalingPage />
-    <LayoutHeaderGlobal />
+    // <LayoutHeaderGlobal />
+
+    // <LayoutHeaderLocal />
+    <LayoutHeaderTransparent />
   );
 }
