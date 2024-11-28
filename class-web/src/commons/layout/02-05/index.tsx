@@ -5,16 +5,21 @@ interface IProps {
   children: ReactNode;
 }
 
-//글로벌 헤더 + 로컬헤더
-// 글로벌 헤더가 나타나야할땐 나타나고 아닐땐 로컬만 나타나게 header.ts에서 적용
-export default function LayoutGlobalLocal({ children }: IProps) {
+///글로벌 헤더 + 로컬헤더 + 숏컨텐츠푸터 + 롱컨텐츠 푸터
+export default function LayoutFooterShortAndLong({ children }: IProps) {
   return (
-    <div>
+    // 여기 div가 footer의 부모가 되는 것
+    <div
+      style={{
+        display: 'flex',
+        flexDirection: 'column',
+        width: '100vw',
+        minHeight: '100vh', //최소 높이가 100vh가 되는거고 컨텐츠가 많아지면 더 길어짐
+      }}
+    >
       <HeaderGlobal />
-      {children}
+      {/* div이런걸로 감싸있으면 박스가 생기기에 fragment 사용 */}
+      <>{children}</>
     </div>
   );
 }
-
-//글로벌 헤더(투명포함) + 로컬헤더(투명포함)
-// export function

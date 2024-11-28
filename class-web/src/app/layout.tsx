@@ -4,6 +4,7 @@ import './globals.css';
 // import LayoutComponent from '@/commons/layout/02-02';
 import LayoutGlobalLocal from '@/commons/layout/02-03';
 import LayoutTransparent from '@/commons/layout/02-04';
+import LayoutFooterShortAndLong from '@/commons/layout/02-05';
 
 const geistSans = localFont({
   src: './fonts/GeistVF.woff',
@@ -38,7 +39,10 @@ export default function RootLayout({
         {/* <LayoutGlobalLocal>{children}</LayoutGlobalLocal> */}
 
         {/* 3) 02-04-layout-header-transparent */}
-        <LayoutTransparent>{children}</LayoutTransparent>
+        {/* <LayoutTransparent>{children}</LayoutTransparent> */}
+
+        {/* 4) 02-05-layout-footer-short-and-long */}
+        <LayoutFooterShortAndLong>{children}</LayoutFooterShortAndLong>
       </body>
     </html>
   );

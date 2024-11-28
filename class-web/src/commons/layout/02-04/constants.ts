@@ -7,6 +7,6 @@ export const HEADER_OPTIONS =(params)=> ({
   },
    
    LOCAL : {
-   [ `section02/02-03-layout-header-local/${params.id}`]: {title : '', hasLogo : false, hasBack : true} 
+   [ `/section02/02-03-layout-header-local/${params.id}`]: {title : '', hasLogo : false, hasBack : true} 
    }
 });
