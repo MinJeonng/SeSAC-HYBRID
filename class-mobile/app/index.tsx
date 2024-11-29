@@ -10,6 +10,8 @@ import LayoutHeaderGlobal from '@/components/section02/02-02-layout-header-globa
 import LayoutHeaderLocal from '@/components/section02/02-03-layout-header-local';
 import LayoutHeaderTransparent from '@/components/section02/02-04-layout-header-transparent';
 import LayoutFooterShortAndLong from '@/components/section02/02-05-layout-footer-short-long';
+// [section03]
+import WebviewLogPage from '@/components/section03/03-01-webview-log';
 
 export default function startPage() {
   return (
@@ -24,6 +26,7 @@ export default function startPage() {
 
     // <LayoutHeaderLocal />
     // <LayoutHeaderTransparent />
-    <LayoutFooterShortAndLong />
+    // <LayoutFooterShortAndLong />
+    <WebviewLogPage />
   );
 }
