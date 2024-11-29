@@ -12,6 +12,8 @@ import LayoutHeaderTransparent from '@/components/section02/02-04-layout-header-
 import LayoutFooterShortAndLong from '@/components/section02/02-05-layout-footer-short-long';
 // [section03]
 import WebviewLogPage from '@/components/section03/03-01-webview-log';
+import PostMsgWebToApp from '@/components/section03/03-02-post-message-web-to-app';
+import PostMsgAppToWeb from '@/components/section03/03-03-post-message-app-to-web';
 
 export default function startPage() {
   return (
@@ -27,6 +29,8 @@ export default function startPage() {
     // <LayoutHeaderLocal />
     // <LayoutHeaderTransparent />
     // <LayoutFooterShortAndLong />
-    <WebviewLogPage />
+    // <WebviewLogPage />
+    // <PostMsgWebToApp />
+    <PostMsgAppToWeb />
   );
 }
