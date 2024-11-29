@@ -14,6 +14,7 @@ import LayoutFooterShortAndLong from '@/components/section02/02-05-layout-footer
 import WebviewLogPage from '@/components/section03/03-01-webview-log';
 import PostMsgWebToApp from '@/components/section03/03-02-post-message-web-to-app';
 import PostMsgAppToWeb from '@/components/section03/03-03-post-message-app-to-web';
+import PostMsgDeviceAPI from '@/components/section03/03-04-post-message-device-api';
 
 export default function startPage() {
   return (
@@ -31,6 +32,7 @@ export default function startPage() {
     // <LayoutFooterShortAndLong />
     // <WebviewLogPage />
     // <PostMsgWebToApp />
-    <PostMsgAppToWeb />
+    // <PostMsgAppToWeb />
+    <PostMsgDeviceAPI />
   );
 }
