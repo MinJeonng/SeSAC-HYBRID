@@ -15,6 +15,8 @@ import WebviewLogPage from '@/components/section03/03-01-webview-log';
 import PostMsgWebToApp from '@/components/section03/03-02-post-message-web-to-app';
 import PostMsgAppToWeb from '@/components/section03/03-03-post-message-app-to-web';
 import PostMsgDeviceAPI from '@/components/section03/03-04-post-message-device-api';
+import PostMsgDeviceAPIPromise from '@/components/section03/03-05-post-message-device-api-promise';
+import PostMsgDeviceAPIPromiseRefactoring from '@/components/section03/03-06-post-message-device-api-promise-refactoring';
 
 export default function startPage() {
   return (
@@ -33,6 +35,8 @@ export default function startPage() {
     // <WebviewLogPage />
     // <PostMsgWebToApp />
     // <PostMsgAppToWeb />
-    <PostMsgDeviceAPI />
+    // <PostMsgDeviceAPI />
+    // <PostMsgDeviceAPIPromise />
+    <PostMsgDeviceAPIPromiseRefactoring />
   );
 }
