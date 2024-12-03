@@ -18,6 +18,9 @@ import PostMsgDeviceAPI from '@/components/section03/03-04-post-message-device-a
 import PostMsgDeviceAPIPromise from '@/components/section03/03-05-post-message-device-api-promise';
 import PostMsgDeviceAPIPromiseRefactoring from '@/components/section03/03-06-post-message-device-api-promise-refactoring';
 
+// [section05]
+import ScheduleNotificationsPage from '@/components/section05/05-01-device-api-refactoring';
+
 export default function startPage() {
   return (
     // <ConfirmSetting />
@@ -37,6 +40,8 @@ export default function startPage() {
     // <PostMsgAppToWeb />
     // <PostMsgDeviceAPI />
     // <PostMsgDeviceAPIPromise />
-    <PostMsgDeviceAPIPromiseRefactoring />
+    // <PostMsgDeviceAPIPromiseRefactoring />
+
+    <ScheduleNotificationsPage />
   );
 }

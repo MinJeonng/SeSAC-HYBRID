@@ -6,6 +6,7 @@ import LayoutGlobalLocal from '@/commons/layout/02-03';
 import LayoutTransparent from '@/commons/layout/02-04';
 import LayoutFooterShortAndLong from '@/commons/layout/02-05';
 import DeviceSetting from '@/commons/settings/03-06-device-setting';
+import DeviceSettingVariables from '@/commons/settings/05-01-device-setting-addVariables';
 
 const geistSans = localFont({
   src: './fonts/GeistVF.woff',
@@ -49,7 +50,10 @@ export default function RootLayout({
         {/* {children} */}
 
         {/* 6. 03-06-post-message-device-api-promise-refactoring */}
-        <DeviceSetting>{children}</DeviceSetting>
+        {/* <DeviceSetting>{children}</DeviceSetting> */}
+
+        {/* 7. 05-01-schedule-notification 이후 */}
+        <DeviceSettingVariables>{children}</DeviceSettingVariables>
       </body>
     </html>
   );
