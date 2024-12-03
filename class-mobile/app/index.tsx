@@ -19,7 +19,8 @@ import PostMsgDeviceAPIPromise from '@/components/section03/03-05-post-message-d
 import PostMsgDeviceAPIPromiseRefactoring from '@/components/section03/03-06-post-message-device-api-promise-refactoring';
 
 // [section05]
-import ScheduleNotificationsPage from '@/components/section05/05-01-device-api-refactoring';
+import ScheduleNotificationsPage from '@/components/section05/05-01-schedule-notifications';
+import ScheduleNotificationsClickPage from '@/components/section05/05-02-schedule-notifications-click';
 
 export default function startPage() {
   return (
@@ -42,6 +43,7 @@ export default function startPage() {
     // <PostMsgDeviceAPIPromise />
     // <PostMsgDeviceAPIPromiseRefactoring />
 
-    <ScheduleNotificationsPage />
+    // <ScheduleNotificationsPage />
+    <ScheduleNotificationsClickPage />
   );
 }
