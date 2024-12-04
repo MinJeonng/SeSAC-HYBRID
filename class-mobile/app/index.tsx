@@ -25,6 +25,9 @@ import ScheduleNotificationsClickPage from '@/components/section05/05-02-schedul
 //[section06]
 import OpenSettings from '@/components/section06/06-01-open-settings';
 
+// [section07]
+import PictureFullScreen from '@/components/section07/07-01-picture-full-screen';
+
 export default function startPage() {
   return (
     // <ConfirmSetting />
@@ -48,6 +51,7 @@ export default function startPage() {
 
     // <ScheduleNotificationsPage />
     // <ScheduleNotificationsClickPage />
-    <OpenSettings />
+    // <OpenSettings />
+    <PictureFullScreen />
   );
 }
