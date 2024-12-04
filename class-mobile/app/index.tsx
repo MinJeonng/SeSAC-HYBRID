@@ -22,6 +22,9 @@ import PostMsgDeviceAPIPromiseRefactoring from '@/components/section03/03-06-pos
 import ScheduleNotificationsPage from '@/components/section05/05-01-schedule-notifications';
 import ScheduleNotificationsClickPage from '@/components/section05/05-02-schedule-notifications-click';
 
+//[section06]
+import OpenSettings from '@/components/section06/06-01-open-settings';
+
 export default function startPage() {
   return (
     // <ConfirmSetting />
@@ -44,6 +47,7 @@ export default function startPage() {
     // <PostMsgDeviceAPIPromiseRefactoring />
 
     // <ScheduleNotificationsPage />
-    <ScheduleNotificationsClickPage />
+    // <ScheduleNotificationsClickPage />
+    <OpenSettings />
   );
 }
