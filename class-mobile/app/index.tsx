@@ -32,6 +32,9 @@ import PictureFullScreenPinchZoom from '@/components/section07/07-02-picture-ful
 // [section09]
 import ViewTransitionPage from '@/components/section09/09-01-view-transition';
 
+// [section10]
+import LoginRefreshToken from '@/components/section10/10-01-login-refreshToken';
+
 export default function startPage() {
   return (
     // <ConfirmSetting />
@@ -59,6 +62,8 @@ export default function startPage() {
     // <PictureFullScreen />
     // <PictureFullScreenPinchZoom />
 
-    <ViewTransitionPage />
+    // <ViewTransitionPage />
+
+    <LoginRefreshToken />
   );
 }
