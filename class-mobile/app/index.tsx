@@ -27,6 +27,7 @@ import OpenSettings from '@/components/section06/06-01-open-settings';
 
 // [section07]
 import PictureFullScreen from '../components/section07/07-01-picture-full-screen/02-after-index';
+import PictureFullScreenPinchZoom from '@/components/section07/07-02-picture-full-screen-pinch-zoom';
 
 export default function startPage() {
   return (
@@ -41,7 +42,7 @@ export default function startPage() {
 
     // <LayoutHeaderLocal />
     // <LayoutHeaderTransparent />
-    // <LayoutFooterShortAndLong />
+    <LayoutFooterShortAndLong />
     // <WebviewLogPage />
     // <PostMsgWebToApp />
     // <PostMsgAppToWeb />
@@ -52,6 +53,7 @@ export default function startPage() {
     // <ScheduleNotificationsPage />
     // <ScheduleNotificationsClickPage />
     // <OpenSettings />
-    <PictureFullScreen />
+    // <PictureFullScreen />
+    // <PictureFullScreenPinchZoom />
   );
 }
