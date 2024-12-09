@@ -29,6 +29,9 @@ import OpenSettings from '@/components/section06/06-01-open-settings';
 import PictureFullScreen from '../components/section07/07-01-picture-full-screen/02-after-index';
 import PictureFullScreenPinchZoom from '@/components/section07/07-02-picture-full-screen-pinch-zoom';
 
+// [section09]
+import ViewTransitionPage from '@/components/section09/09-01-view-transition';
+
 export default function startPage() {
   return (
     // <ConfirmSetting />
@@ -42,7 +45,7 @@ export default function startPage() {
 
     // <LayoutHeaderLocal />
     // <LayoutHeaderTransparent />
-    <LayoutFooterShortAndLong />
+    // <LayoutFooterShortAndLong />
     // <WebviewLogPage />
     // <PostMsgWebToApp />
     // <PostMsgAppToWeb />
@@ -55,5 +58,7 @@ export default function startPage() {
     // <OpenSettings />
     // <PictureFullScreen />
     // <PictureFullScreenPinchZoom />
+
+    <ViewTransitionPage />
   );
 }

@@ -7,3 +7,70 @@ html {
   /* 위의 값을 연산하면 내가 조정해야할 폰트가 얼만지 알 수 있음 , 단위때문에 * vw */
   font-size: calc((40 / 9) * 1vw);
 }
+
+/* section09 09-01-view-transition에서 페이지 이동 애니메이션 추가 */
+/* 이동하기 이전페이지 */
+@keyframes movedPage_Prev {
+  /* 클릭해서 페이지 전환할때 이전페이지가 오른쪽으로 빠지고 다음에 나올 페이지가 짠하고 나타나게끔 */
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+/* 이동하기 다음페이지 */
+@keyframes movedPage_Next {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    /* 새로운 페이지가 딴하고 나타남 */
+    transform: translateX(0%);
+  }
+}
+/* 이전페이지 */
+html::view-transition-old(root) {
+  animation-name: movePage_Prev;
+  animation-duration: 0.2s;
+}
+html::view-transition-new(root) {
+  /* 그룹은 root, 이게 default */
+  animation-name: movePage_Next;
+  animation-duration: 0.5s;
+}
+
+/* 뒤로가기 이전페이지 */
+@keyframes backPage_prev {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+
+/* 뒤로가기 다음페이지 */
+@keyframes backPage_Next {
+  /* 안보이던 페이지가 보이게 될 것 */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* 뒤로가기 버튼이 있으면 이 애니메이션을 작동해줘
+뒤로가기 클래스 인것
+
+*/
+html.backBtn::view-transition-old(root) {
+  animation-name: backPage_prev;
+  animation-duration: 0.5s;
+}
+html.backBtn::view-transition-new(root) {
+  /* 그룹은 root, 이게 default */
+  animation-name: backPage_Next;
+  animation-duration: 1s;
+}

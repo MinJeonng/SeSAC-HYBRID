@@ -8,6 +8,8 @@ import './globals.css';
 // import DeviceSetting from '@/commons/settings/03-06-device-setting';
 // import DeviceSettingVariables from '@/commons/settings/05-01-device-setting-addVariables';
 import DeviceSettingRedirect from '@/commons/settings/05-02-device-setting-redirect';
+import DeviceSettingViewTransition from '@/commons/settings/09-01-device-setting-view-transition';
+import RoutingSettingViewTransition from '@/commons/settings/09-01-routing-setting-view-transition';
 
 const geistSans = localFont({
   src: './fonts/GeistVF.woff',
@@ -68,6 +70,13 @@ export default function RootLayout({
 
         {/* 8. 05-02-schedule-notification-click 이후 */}
         <DeviceSettingRedirect>{children}</DeviceSettingRedirect>
+
+        {/* 11. 09-01-view-transition 이후 */}
+        <DeviceSettingViewTransition>
+          <RoutingSettingViewTransition>
+            {children}
+          </RoutingSettingViewTransition>
+        </DeviceSettingViewTransition>
       </body>
     </html>
   );
