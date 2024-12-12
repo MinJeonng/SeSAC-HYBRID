@@ -18,6 +18,9 @@ import PostMsgDeviceAPI from '@/components/section03/03-04-post-message-device-a
 import PostMsgDeviceAPIPromise from '@/components/section03/03-05-post-message-device-api-promise';
 import PostMsgDeviceAPIPromiseRefactoring from '@/components/section03/03-06-post-message-device-api-promise-refactoring';
 
+//[section04]
+import DeviceSystemApi from '@/components/section04/04-01-device-system-api';
+
 // [section05]
 import ScheduleNotificationsPage from '@/components/section05/05-01-schedule-notifications';
 import ScheduleNotificationsClickPage from '@/components/section05/05-02-schedule-notifications-click';
@@ -40,6 +43,7 @@ import PullToRefresh from '@/components/section11/11-01-pull-to-refresh';
 
 // [section12]
 import MicroFrontend from '@/components/section12/12-01-micro-frontend';
+import MicroFrontendSharedCache from '@/components/section12/12-02-micro-frontend-shared-cache';
 
 export default function startPage() {
   return (
@@ -62,6 +66,8 @@ export default function startPage() {
     // <PostMsgDeviceAPIPromise />
     // <PostMsgDeviceAPIPromiseRefactoring />
 
+    <DeviceSystemApi />
+
     // <ScheduleNotificationsPage />
     // <ScheduleNotificationsClickPage />
     // <OpenSettings />
@@ -73,6 +79,7 @@ export default function startPage() {
     // <LoginRefreshToken />
     // <PullToRefresh />
 
-    <MicroFrontend />
+    // <MicroFrontend />
+    // <MicroFrontendSharedCache />
   );
 }

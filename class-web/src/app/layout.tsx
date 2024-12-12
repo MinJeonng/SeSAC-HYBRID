@@ -8,8 +8,10 @@ import './globals.css';
 // import DeviceSetting from '@/commons/settings/03-06-device-setting';
 // import DeviceSettingVariables from '@/commons/settings/05-01-device-setting-addVariables';
 // import DeviceSettingRedirect from '@/commons/settings/05-02-device-setting-redirect';
-import DeviceSettingViewTransition from '@/commons/settings/09-01-device-setting-view-transition';
-import RoutingSettingViewTransition from '@/commons/settings/09-01-routing-setting-view-transition';
+// import DeviceSettingViewTransition from '@/commons/settings/09-01-device-setting-view-transition';
+// import RoutingSettingViewTransition from '@/commons/settings/09-01-routing-setting-view-transition';
+import ApolloSettingMicroFrontendSharedCache from '@/commons/settings/12-02-apollo-setting-micro-frontend-shared-cache';
+import DeviceSettingMicroFrontend from '@/commons/settings/12-02-device-setting-micro-frontend';
 
 const geistSans = localFont({
   src: './fonts/GeistVF.woff',
@@ -72,11 +74,16 @@ export default function RootLayout({
         {/* <DeviceSettingRedirect>{children}</DeviceSettingRedirect> */}
 
         {/* 11. 09-01-view-transition 이후 */}
-        <DeviceSettingViewTransition>
+        {/* <DeviceSettingViewTransition>
           <RoutingSettingViewTransition>
             {children}
           </RoutingSettingViewTransition>
-        </DeviceSettingViewTransition>
+        </DeviceSettingViewTransition> */}
+
+        {/* 12. 12-02-micro-frontend-shared-cache  : 내가 받은거 앱에 전달해주기*/}
+        <ApolloSettingMicroFrontendSharedCache>
+          <DeviceSettingMicroFrontend>{children}</DeviceSettingMicroFrontend>
+        </ApolloSettingMicroFrontendSharedCache>
       </body>
     </html>
   );
