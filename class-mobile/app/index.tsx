@@ -35,6 +35,12 @@ import ViewTransitionPage from '@/components/section09/09-01-view-transition';
 // [section10]
 import LoginRefreshToken from '@/components/section10/10-01-login-refreshToken';
 
+// [section11]
+import PullToRefresh from '@/components/section11/11-01-pull-to-refresh';
+
+// [section12]
+import MicroFrontend from '@/components/section12/12-01-micro-frontend';
+
 export default function startPage() {
   return (
     // <ConfirmSetting />
@@ -64,6 +70,9 @@ export default function startPage() {
 
     // <ViewTransitionPage />
 
-    <LoginRefreshToken />
+    // <LoginRefreshToken />
+    // <PullToRefresh />
+
+    <MicroFrontend />
   );
 }

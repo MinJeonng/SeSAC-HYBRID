@@ -7,7 +7,7 @@ import './globals.css';
 // import LayoutFooterShortAndLong from '@/commons/layout/02-05';
 // import DeviceSetting from '@/commons/settings/03-06-device-setting';
 // import DeviceSettingVariables from '@/commons/settings/05-01-device-setting-addVariables';
-import DeviceSettingRedirect from '@/commons/settings/05-02-device-setting-redirect';
+// import DeviceSettingRedirect from '@/commons/settings/05-02-device-setting-redirect';
 import DeviceSettingViewTransition from '@/commons/settings/09-01-device-setting-view-transition';
 import RoutingSettingViewTransition from '@/commons/settings/09-01-routing-setting-view-transition';
 
@@ -69,7 +69,7 @@ export default function RootLayout({
         {/* <DeviceSettingVariables>{children}</DeviceSettingVariables> */}
 
         {/* 8. 05-02-schedule-notification-click 이후 */}
-        <DeviceSettingRedirect>{children}</DeviceSettingRedirect>
+        {/* <DeviceSettingRedirect>{children}</DeviceSettingRedirect> */}
 
         {/* 11. 09-01-view-transition 이후 */}
         <DeviceSettingViewTransition>
